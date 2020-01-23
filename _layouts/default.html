@@ -1,0 +1,138 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="title" content="{{ page.title }}">
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+
+    <meta name="og:title" content="{{ page.title }}">
+    <meta name="og:url" content="{{ page.url }}">
+    <!-- <meta name="og:image" content="{{ page.logo }}"> -->
+    <meta name="og:description" content="{{ page.description }}">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="{{ page.url }}" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ page.description }}" />
+    <!-- <meta name="twitter:image" content="{{ page.logo }}" /> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv='Expires' content='0'>
+    <meta http-equiv='Pragma' content='no-cache'>
+    <meta http-equiv='Cache-Control' content='no-cache'>
+    <meta http-equiv='imagetoolbar' content='no'>
+
+    <title>{{ page.title }}</title>
+    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/favicon.ico"/>
+
+    <!-- Feather CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/feather-core.css"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/feather-component-grid.css"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/feather-component-button.css"/>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ page.custom_css }}"/>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-title">
+            <span class="Icon Icon--logo Icon--large"></span>
+
+            <!-- Link in web -->
+            <a class="home-link" href="{{ site.baseurl }}/">Saemix R Package</a>
+
+            <!-- Text in mobile -->
+            <p class="home-text">Saemix R Package</p>
+            <span id="caret" class="Icon Icon--caretDown"></span>
+        </div>
+        <ul class="nav-menu">
+            <!-- This link only exists in mobile -->
+            <li id="extra-mobile-link" class="nav-list-item">
+                <a class="nav-link" href="{{ site.baseurl }}/">Saemix R Package</a>
+            </li>
+
+            <li class="nav-list-item">
+                <a class="nav-link" href="{{ site.baseurl }}/memberships">Introduction</a>
+            </li>
+
+            <li class="nav-list-item">
+                <a class="nav-link" href="{{ site.baseurl }}/projects">Projects</a>
+            </li>
+
+
+            <li class="nav-list-item">
+                <a class="nav-link" href="{{ site.baseurl }}/contact">Contact</a>
+            </li>
+
+
+            <li class="nav-list-item list-end">
+                <a class="nav-link" href="https://github.com/saemixr" target="_blank">GitHub</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Site wrapper -->
+    <div class="site">
+        {{ content }}
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="Grid container">
+            <div class="Grid-cell footer-cell u-size1of4 footer-margin">
+                <button onclick="location.href='{{ site.baseurl }}/projects'" type="button" class="Button Button--large">Explore Projects</button>
+            </div>
+            <div class="Grid-cell footer-cell u-size1of4 footer-margin">
+                <h3 class="xsmall-margin">
+                    <a class="foot-link" target="_blank" href="http://www.saemix.biostat.fr/">About</a>
+                </h3>
+            </div>
+
+            <div class="Grid-cell footer-cell u-size1of4 footer-margin">
+                <h3 class="xsmall-margin">
+                    <a class="foot-link" target="_blank" href="http://www.saemix.biostat.fr/">Blogs</a>
+                </h3>
+            </div>
+
+            <div class="Grid-cell footer-cell u-size1of4 footer-margin">
+                <h3 class="xsmall-margin">
+                    <a class="foot-link" target="_blank" href="https://github.com/saemixr">Developers</a>
+                </h3>
+            </div>
+
+            <div class="Grid-cell footer-cell u-size1of4">
+                <a class="foot-link" href="">© 2018 Saemix R, Inc.</a>
+            </div>
+
+            <div class="Grid-cell footer-cell u-size1of4">
+                <a class="foot-link" target="_blank" href="">Cookies</a>
+            </div>
+
+            <div class="Grid-cell footer-cell u-size1of4">
+                <a class="foot-link" target="_blank" href="">Privacy</a>
+            </div>
+
+            <div class="Grid-cell footer-cell u-size1of4">
+                <a class="foot-link" target="_blank" href="">Terms and Conditions</a>
+            </div>
+
+        </div>
+    </div> <!-- End of Footer -->
+  </body>
+
+</html>
+
+<script src="{{ site.baseurl }}/js/main.js"></script>
+<script src="{{ site.baseurl }}/js/{{ page.custom_js }}"></script>
+
+{% include ga.html %}
