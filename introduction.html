@@ -13,7 +13,20 @@ custom_js: memberships.js
     <div class="container">
     <h1 class="small-title medium-margin">Introduction</h1>
     <h2 class="small-margin">saemix is an R implementation of the Stochastic Approximation EM algorithm for parameter estimation in (non)linear mixed effects models, which was proposed by Kuhn and Lavielle in 2005.</h2>
-    <p>Test</p>
+    <p>
+    Longitudinal data arise in many fields, such as agronomy, spatial analysis, imagery, clinical trials, and have been particularly prominent in the field of pharmacokinetics (PK) and pharmacodynamics (PD), where increasingly complex models involving mechanistic and empirical processes have been developed to describe the time course of and responses to drugs. 
+    Nonlinear models pose unique challenges in terms of estimation methods, and have driven the research to provide better estimation of parameters as well as the associated uncertainty, diagnostics of model misspecification and more informative designs.
+     The SAEM algorithm, based on two highly cited publications by one of our project members Marc Lavielle, see (Delyon, Lavielle, and Moulines 1999) and (Kuhn and Lavielle 2004), was implemented in R in 2011 in the saemix R package~(Comets, Lavenu, and Lavielle 2017). 
+    Several applications of SAEM in agronomy, animal breeding and PKPD analysis have been published using saemix.
+    PK/PD analyses are now a fundamental element of the registration file submitted to health authority for the approval of new drugs, but NLMEM are also increasingly applied to other areas. In clinical trials, they complement the point analyses by offering a unique understanding of the evolution of disease or treatment action. In cohort studies, they allow to model trajectories such as growth or cognitive decline. Joint models are now routinely used to link the evolution of markers with the occurrence of an event. Making use of S4 classes and methods to provide user-friendly interaction, saemix provides a new maximum likelihood estimation tool with a powerful exact algorithm to the R community.
+    </p>
+    <h2 class="small-margin">References</h2>
+
+    <ul>
+      <li>Comets, Emmanuelle, Audrey Lavenu, and Marc Lavielle. 2017. “Parameter Estimation in Nonlinear Mixed Effect Models Using Saemix, an R Implementation of the Saem Algorithm.” Journal of Statistical Software, Articles 80 (3): 1–41. doi:10.18637/jss.v080.i03.</li>
+      <li>Delyon, Bernard, Marc Lavielle, and Eric Moulines. 1999. “Convergence of a stochastic approximation version of the EM algorithm.” Ann. Statist. 27 (1). The Institute of Mathematical Statistics: 94–128. doi:10.1214/aos/1018031103.</li>
+      <li>Kuhn, Estelle, and Marc Lavielle. 2004. “Coupling a stochastic approximation version of EM with an MCMC procedure.” ESAIM: Probability and Statistics 8. EDP-Sciences: 115–31. http://eudml.org/doc/245020.<//p></li>
+    </ul>
     </div>
   </div>
 
