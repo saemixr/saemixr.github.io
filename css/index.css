@@ -8,55 +8,6 @@
     //other stuff..
     }
 }
-
-.header {
-	width: 88%;
-	margin: auto;
-	-webkit-box-shadow: -2px 2px 80px -10px #0B0B3B;
-	-moz-box-shadow: -2px 2px 80px -10px #0B0B3B;
-	box-shadow: -2px 2px 80px -10px #000;
- }
- 
- .wrapper{
-	width: 100%;
- }
- 
- .box{
-	vertical-align: top;
-	display: inline-block;
-	box-sizing: border-box;
-	height: 170px;
- }
- 
- .one {
-	background-color: gray;
-	width: 20%;
- }
- 
- .two { 
-	background-color: white;
-	width: 79%;
-	border:2px dashed #ccc;
- }
- 
- @media screen and (max-width: 768px) {
-	.box{
-	   display: block;
-	}
- 
-	.one {
-	   width: 100%;
-	}
- 
-	.two {
-	   width: 100%;
-	}
-	.three {
-		width: 100%;
-	 }
- }
-
-
 .home-header {
 	padding-top: calc(var(--feather-grid-mega) * 3);
 	padding-bottom: calc(var(--feather-grid-mega) * 1.75);
